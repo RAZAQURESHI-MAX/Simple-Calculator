@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./calculator.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div id="screen" style="height: 70px; width: 400px; "></div>
+            <div class="parent">
+                <button class="btn yellow" onclick="getvalue('')">AC</button>
+                <button class="btn yellow" onclick="getvalue('DE')">DE</button>
+                <button class="btn yellow" onclick="getvalue('.')">.</button>
+                <button class="btn yellow" onclick="getvalue('/')">/</button>
+
+                <button class="btn" onclick="getvalue(7)">7</button>
+                <button class="btn" onclick="getvalue(8)">8</button>
+                <button class="btn" onclick="getvalue(9)">9</button>
+                <button class="btn yellow" onclick="getvalue('*')">*</button>
+
+                <button class="btn" onclick="getvalue(4)">4</button>
+                <button class="btn" onclick="getvalue(5)">5</button>
+                <button class="btn" onclick="getvalue(6)">6</button>
+                <button class="btn yellow" onclick="getvalue('-')">-</button>
+
+                <button class="btn" onclick="getvalue(1)">1</button>
+                <button class="btn" onclick="getvalue(2)">2</button>
+                <button class="btn" onclick="getvalue(3)">3</button>
+                <button class="btn yellow" onclick="getvalue('+')">+</button>
+
+                <button class="btn zero" onclick="getvalue(0)">0</button>
+                <button class="btn equal yellow" onclick="getvalue('=')">=</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
